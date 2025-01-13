@@ -1,15 +1,18 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
+import Onboarding from "@/components/Onboarding";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.container}>
+      <Onboarding/>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1
+  }
+})
