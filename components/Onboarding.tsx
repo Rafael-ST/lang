@@ -2,6 +2,9 @@ import { View, Text, StyleSheet, FlatList, Animated } from 'react-native'
 
 import slides from '../slides'
 import OnboardingItem from './OnboardingItem'
+import Paginator from './Paginator'
+
+
 import { useRef, useState } from 'react'
 
 import type { ViewToken } from 'react-native';
@@ -37,6 +40,7 @@ export default function Onboarding(){
              viewabilityConfig={viewConfig}
              ref={slideref}
              />
+             <Paginator data={slides}/>
         </View>
     )
 }
